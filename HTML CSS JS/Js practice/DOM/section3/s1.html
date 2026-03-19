@@ -1,0 +1,36 @@
+<!-- Style Property Manipulation 
+```html
+<div id="styled-box">Style Me</div>
+<button id="style-btn">Apply Styles</button>
+```
+ Tasks: 
+1. Apply multiple CSS styles via JavaScript
+
+2. Reset all styles to default
+ -->
+
+<html>
+
+<body>
+    <div id="styled-box">Style Me</div>
+<button id="style-btn">Apply Styles</button>
+</body>
+
+
+<script>
+    const css=document.querySelector("#styled-box");
+    const css1=document.querySelector("#style-btn");
+
+    css1.addEventListener('click',function(){
+        if(css.style.color=="red"){
+            css.style.color="black";
+            css1.textContent="Apply the style";
+        }
+        else{
+            css.style.color="red";
+            css1.textContent="Reset the style";
+        }
+    } );
+    
+</script>
+</html>

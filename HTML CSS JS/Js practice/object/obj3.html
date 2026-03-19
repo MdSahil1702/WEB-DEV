@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+
+            const car={
+                name: "BMW",
+                model: "500",
+                color: "white",
+
+                fn: function run(){
+                    console.log("Car is running");
+                },
+                ff: function stop(){
+                    console.log("Car is stopped");
+                }
+            }
+            console.log(car.name);
+            console.log(car.model);
+            console.log(car.color);
+
+            car.ff();
+            car.fn();
+
+
+            console.log(typeof car.ff);
+            console.log(typeof car);
+        </script>
+    </body>
+</html>

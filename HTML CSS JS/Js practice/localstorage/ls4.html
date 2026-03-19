@@ -1,0 +1,34 @@
+<!-- You already have "user" stored in localStorage as
+{ name: "Riya", age: 22 }.
+👉 Task:
+
+Retrieve the object
+
+Increment age by 1
+
+Store it back again properly in localStorage-->
+
+
+<html>
+    <body>
+        <script>
+       
+       const user={
+name:'Riya',
+age: 21
+       };
+
+       localStorage.setItem("a",JSON.stringify(user));
+
+       const a =JSON.parse(localStorage.getItem("a")) ;
+
+       console.log(a);
+       a.age+=1;
+
+       localStorage.setItem("a",JSON.stringify(a));
+
+       console.log(JSON.parse(localStorage.getItem("a")));
+       
+        </script>
+    </body>
+</html>

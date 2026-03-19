@@ -1,0 +1,27 @@
+<!-- 6. Moderate — Clear All Data**
+
+Your web app stores several keys like `"user"`, `"theme"`, `"cart"`, `"token"`.
+👉 Task:
+
+* Use a single command to remove *all* of them from localStorage.
+* Then confirm `localStorage.length` equals `0`. -->
+
+<html>
+    <body>
+        <script>
+       
+       localStorage.setItem("user",'sahil');
+       
+       localStorage.setItem("theme","dark");
+       localStorage.setItem("cart","empty");
+       localStorage.setItem("token",543);
+
+       localStorage.clear();
+
+       console.log(localStorage.length);
+
+
+
+        </script>
+    </body>
+</html>

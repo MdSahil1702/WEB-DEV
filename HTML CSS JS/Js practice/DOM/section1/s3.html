@@ -1,0 +1,63 @@
+<!-- DOM Traversal 
+```html
+<div id="grandparent">
+    <div class="parent">
+        <span class="child">Child 1</span>
+        <p class="child">Child 2</p>
+    </div>
+    <div class="parent">
+        <span class="child">Child 3</span>
+    </div>
+</div>
+```
+ Tasks: 
+1. Start from a child element and traverse to its parent
+2. From parent, traverse to all its children
+3. Find next and previous siblings
+4. Count how many children each parent has -->
+
+<html>
+
+<body>
+
+    <div id="grandparent">
+        <div class="parent">
+            <span class="child">Child 1</span>
+            <p class="child">Child 2</p>
+        </div>
+        <div class="parent">
+            <span class="child">Child 3</span>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    //1 child to parent 
+
+    const child = document.querySelector('.child');
+
+    console.log(child.parentElement);
+
+    //2 parent to child
+    const parents=Array.from(document.querySelectorAll('.parent'));
+
+    console.log(parents[0].children);
+    console.log(parents[1].children);
+
+    //3. finding the next and previous sibling of the child 
+    console.log(child.nextElementSibling);
+    console.log(child.previousElementSibling);
+
+    //4 finding the number of children each parent have
+
+   
+   console.log(parents[0].childElementCount);
+
+   console.log(parents[1].childElementCount);
+
+
+
+</script>
+</html>

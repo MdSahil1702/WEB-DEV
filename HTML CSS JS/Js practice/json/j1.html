@@ -1,0 +1,24 @@
+<!-- You have an object representing a person with name, age, and city.
+→ Convert it into a JSON string and print it.
+→ Then parse it back to an object and access the person’s city. -->
+
+<html>
+    <body>
+        <script>
+            const person={
+                name:"Sahil",
+                age:22,
+                city:"Thane"
+            };
+
+            console.log(JSON.stringify(person));
+
+            const str = JSON.parse(JSON.stringify(person));
+
+            console.log(str);
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!-- You have an object like { name: "Riya", age: 22 }.
+👉 Task:
+
+Store this object in localStorage.
+
+Retrieve it and access the user’s age.
+(Hint: use JSON.stringify() and JSON.parse()).-->
+
+
+<html>
+    <body>
+        <script>
+        const obj={
+            name:'Riya',
+            age: 22
+        };
+       
+//convert the obj to json notation means in string type 
+
+        localStorage.setItem("object", JSON.stringify(obj));
+
+        //getting the saved data and then converting back to javascript type that is object 
+        
+        const a=JSON.parse(localStorage.getItem("object"));
+
+
+        console.log(a.age);
+
+        </script>
+    </body>
+</html>

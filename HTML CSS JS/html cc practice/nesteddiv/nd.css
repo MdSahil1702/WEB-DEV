@@ -1,0 +1,70 @@
+
+p{
+    font-family: Roboto;
+    margin: 4px;
+    
+font-size: 19px;
+}
+.container{
+    margin: 10px;
+    width: 400px;
+    height: 90px;
+   
+}
+.logo{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 10px;
+    
+
+}
+.username{
+    font-weight: 500;
+    font-size: 23px;
+}
+.name{
+    font-size: 16px;
+    color: rgb(96,96,96);
+}
+.category{
+    color: rgb(96,96,96);
+    font-size: 13px;
+}
+.follow{
+
+    margin-top: 27.5px;
+    vertical-align: top;
+    
+    border:none;
+    display: inline-block;
+    width: 95px;
+    height: 35px;
+}
+.logoimg{
+
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+}
+.textcontainer{
+    margin-top:6px;
+    vertical-align: top;
+    display: inline-block;
+    width: 190px;
+}
+.followbutton{
+  border: 0;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size:18px ;
+    font-weight: bold;
+    margin: 0px;
+ cursor: pointer;
+    width: 95px;
+    height: 35px;
+    background-color: rgb(65, 156, 236);
+    color: white;
+   
+}

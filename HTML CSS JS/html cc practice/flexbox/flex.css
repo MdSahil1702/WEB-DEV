@@ -1,0 +1,13 @@
+.d{
+    display: flex;
+    flex-direction: row;
+}
+
+.d1{
+    width: 100px;
+ background-color: lightcoral;
+}
+.d2{
+    flex: 1;
+   background-color: lightgreen;
+}

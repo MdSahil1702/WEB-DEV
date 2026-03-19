@@ -1,0 +1,28 @@
+body{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.buts{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#cart{
+    cursor: pointer;
+    padding: 4px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+#buy{
+    cursor: pointer;
+    padding: 4px;
+    background-color: orange;
+    border: 2px solid black;
+}

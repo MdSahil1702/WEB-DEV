@@ -1,0 +1,22 @@
+<!-- 1. Basic — Store and Retrieve
+
+You want to save a user’s name in local storage and later display it on the page.
+👉 Task:
+
+Store the name "Amit" using localStorage.setItem()
+
+Retrieve it using getItem() and log it to the console.
+
+Confirm the value in Application → Local Storage tab in browser dev tools.-->
+
+
+<html>
+    <body>
+        <script>
+            
+        localStorage.setItem('name','Amit');
+        const n=localStorage.getItem('name');
+        console.log(n);
+        </script>
+    </body>
+</html>

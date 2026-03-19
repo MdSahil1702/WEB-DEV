@@ -1,0 +1,41 @@
+<!-- : NodeList vs HTMLCollection 
+```html
+<ul id="list">
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+</ul>
+```
+ Tasks: 
+1. Select all list items using `getElementsByClassName` and `querySelectorAll`
+2. Log both results and check their types-->
+
+<html>
+    <body>
+        <ul id="list">
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+   
+    </body>
+    
+
+<script>
+
+   
+    console.log(document.getElementsByClassName("item"));
+
+    console.log( document.querySelectorAll(".item"));
+   
+
+    console.log("type of HTMLCollection "+typeof document.getElementsByClassName("item"));
+
+    console.log("type of nodelist "+ document.querySelectorAll(".item"));
+
+
+
+    
+
+
+</script>
+</html>

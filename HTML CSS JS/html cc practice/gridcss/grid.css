@@ -1,0 +1,32 @@
+.grid{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+}
+
+.grid1{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+}
+
+.biggrid{
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.insider{
+    background-color: lightblue;
+    height: 200px;
+}
+.insider1{
+    background-color: lightpink;
+    height: 200px;
+
+}
+.insider2{
+    background-color: lightblue;
+    height: 200px;
+}

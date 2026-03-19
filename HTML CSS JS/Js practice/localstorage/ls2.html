@@ -1,0 +1,28 @@
+<!-- You save a user’s score 50 using localStorage.setItem().
+👉 Task:
+
+Retrieve the score and log its type using typeof.
+
+Why is it a string, and how can you convert it back to a number? -->
+
+<html>
+    <body>
+        <script>
+            const s=50;
+            
+      localStorage.setItem('score',s);
+       console.log(localStorage.getItem('score'));
+       console.log(typeof localStorage.getItem('score'));
+
+       //converting back to number 
+       //as the score was not string then too its showing its a type of string let then convert it back to number 
+       //since it is in JSON code and thats why it is string lets convert it into javascript code 
+
+
+       const a=JSON.parse(localStorage.getItem('score'));
+
+       console.log(a);
+       console.log(typeof a );
+        </script>
+    </body>
+</html>

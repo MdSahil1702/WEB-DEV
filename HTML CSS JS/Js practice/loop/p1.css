@@ -1,0 +1,30 @@
+#maincontainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: lightpink;
+    align-items: center;
+    padding: 10px;
+}
+
+#action{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#title{
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
+}
+
+#textt{
+    width: 200px;
+
+}
+
+#addbutton{
+width: 50px;
+cursor: pointer;
+
+}

@@ -1,0 +1,1 @@
+export const name="i am from question 6";

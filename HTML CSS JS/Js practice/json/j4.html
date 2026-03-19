@@ -1,0 +1,16 @@
+<!-- You try to parse this string:
+"{name: 'Amit', age: 25}"
+→ Predict the error and then correct the string so it can be parsed.-->
+
+<html>
+    <body>
+        <script>
+          
+          
+        //   const str="{name: 'Amit', age: '25}";
+          //we have to use double quote as the json string have double quote if we try to parse this single quote then will throw error
+           const str='{"name": "Amit", "age": "25"}';
+          console.log(JSON.parse(str));
+        </script>
+    </body>
+</html>

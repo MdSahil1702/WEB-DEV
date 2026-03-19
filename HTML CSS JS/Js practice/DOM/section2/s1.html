@@ -1,0 +1,40 @@
+<!-- textContent vs innerText vs innerHTML 
+```html
+<div id="test-element">
+    Hello   World
+    <span style="display: none">Hidden Text</span>
+    <br>
+    <strong>Bold Text</strong>
+</div>
+```
+ Tasks: 
+1. Get content using all three properties and compare results
+ -->
+
+<html>
+    <body>
+        
+        <div id="test-element">
+    Hello   World
+    <span style="display: none">Hidden Text</span>
+    <br>
+    <strong>Bold Text</strong>
+</div>
+    </body>
+
+    <script>
+        //1 getting content using three property
+
+        const data = document.querySelector("#test-element");
+
+      
+        
+        console.log(data.innerHTML);//total text within the test-element id
+
+        console.log(data.innerText);//just the text that are none hidden 
+        console.log(data.textContent);//jsut the text but also shows the text that are hidden from the viewer on the webpage but without html tag like strong effect 
+
+ 
+
+    </script>
+</html>

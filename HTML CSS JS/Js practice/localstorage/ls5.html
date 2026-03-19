@@ -1,0 +1,28 @@
+<!-- You have multiple keys stored:
+
+"username", "token", "theme"
+
+👉 Task:
+
+Remove only "token" from localStorage
+
+Verify it’s deleted but other keys remain -->
+
+<html>
+    <body>
+        <script>
+       
+       localStorage.setItem("username",'sahil');
+       localStorage.setItem("token",534);
+       localStorage.setItem("theme","dark");
+
+       localStorage.removeItem("token");
+
+       console.log(localStorage.getItem("username"));
+       console.log(localStorage.getItem("token"));//output is null showing that it is deleted successfully
+       console.log(localStorage.getItem("theme"));
+
+
+        </script>
+    </body>
+</html>

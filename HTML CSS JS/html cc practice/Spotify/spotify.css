@@ -1,0 +1,594 @@
+body{
+    background-color: black;
+   font-family: roboto;
+ 
+   padding-left: 430px;
+   padding-top: 58px;
+   padding-bottom: 50px;
+}
+.main{
+    
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px
+    
+}
+.footer{
+    background-image: linear-gradient(to right,rgb(166, 43, 168),rgb(79, 152, 246));
+    position: fixed;
+    bottom: 10px;
+    left: 10;
+    right: 10;
+    color: white;
+    background-color: rgb(175, 47, 177);
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 400px;
+
+}
+header{
+   position: fixed;
+   right: 0;
+   left: 1;
+   top: 5;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    /* background-color: white; */
+    height: 55px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+#leftsection{
+
+    padding-left: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+    width: 120px;
+    color: white;
+    /* background-color: lightblue; */
+}
+
+#rightsection{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    right: 0;
+    width: 590px;
+    column-gap: 30px;
+    
+    color: white;
+    /* background-color: lightpink; */
+    align-items: center;
+
+}
+#midsection{
+
+    flex: 1;
+    color: white;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logodiv,#logodiv1{
+    
+    display: inline-block;
+    background-color: rgb(42, 41, 41);
+    width: 150px;
+    height: 47px;
+    border-radius: 400px;
+
+}
+#logodiv{
+   
+    background-color: rgb(7, 7, 7);
+}
+#logodiv1{
+   cursor: pointer;
+   margin-right: 3px;
+   transition: background-color 0.15s;
+}
+#logodiv1:hover{
+    background-color: rgb(63, 62, 62);
+}
+#logo{
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 9px;
+    width: 70%;
+   
+}
+#ghar{
+    margin-top: 5px;
+    margin-left: 8.3px;
+    width: 60%;
+}
+
+#searchdiv{
+    background-color: black;
+    width: 370px;
+    height: 50px;
+}
+
+#search{
+    
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    margin-top: 0px;
+    height: 50px;
+    width: 370px;
+    background-color: rgb(42, 41, 41);
+    
+}
+#search::placeholder{
+  
+    font-size: 16px;
+    color: rgb(174, 174, 174);
+}
+#searchlogodiv{
+    
+    width: 47px;
+    height: 48px;
+    background-color: rgb(42, 41, 41);
+    border: 1px solid black;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#searchbrowse{
+    
+    width: 55px;
+    height: 48px;
+    background-color: rgb(42, 41, 41);
+    border: 1px solid black;
+    border-left: none;
+    
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#browseimg{
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: 8px;
+    width: 40px;
+    
+}
+
+#searchlogo{
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 12px;
+    width: 26px;
+}
+
+#downloadsection{
+    display: flex;
+    flex-direction: row;
+   column-gap:10px;
+   width: 210px;
+    height: 28px;
+    
+    /* background-color: yellow; */
+    border-right: 1px solid white;
+    padding-right: 40px;
+    
+}
+#installsection{
+    display: flex;
+    flex-direction: row;
+    
+    flex: 1;
+     height: 35px;
+    
+}
+#threesection{
+
+padding-top: 3px;
+
+
+    width: auto;
+    /* background-color: red; */
+    height: 27px;
+
+}
+#applogo{
+    /* background-color: yellow; */
+    width: 24px;
+}
+#appimg{
+    margin-top:8.5px;
+    width: 17px;
+}
+#app{
+       font-size: 13.8px;
+    font-weight: 800;
+    color: rgb(170, 169, 169);
+    width:100px;
+margin-top: 10px;
+}
+
+
+#signup{
+    margin-left: 1px;
+    font-weight: 800;
+    font-size: 13.8px;
+    color: rgb(170, 169, 169);
+    margin-top: 10px;
+    
+
+}
+#app:hover,#signup:hover{
+    cursor: pointer;
+    color: white;
+}
+#login{
+    
+    cursor: pointer;
+    margin-top: -6px;
+    font-size: 16px;
+    font-weight: 795;
+    height: 48px;
+    
+    margin-left: 12px;
+    width: 110px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    border: none;
+    transition: background-color 0.15s;
+   
+    
+}
+#login:hover{
+   
+background-color: rgb(234, 233, 233);
+}
+#texxt{
+    text-decoration: none;
+   font-weight: 550;
+font-size: 17px;
+    color: rgb(170, 169, 169);
+}
+#texxt:hover{
+    color: white;
+}
+
+#library,#trendingsong{
+    color: rgb(35, 34, 34);
+    border-radius: 10px;
+    background-color: rgb(35, 34, 34);
+}
+#library{
+    
+    background-color: rgb(19, 18, 18);
+    position: fixed;
+    left: 10;
+height:670px;
+    width: 420px;
+    
+}
+#trendingsong{
+   height:670px;
+    flex: 2;
+}
+
+.yourlib{
+    display: flex;
+    flex-direction: row;
+    
+    color: white;
+height: 60px;
+align-items: center;
+
+}
+#librarytext{
+    flex: 4;
+    
+    margin-left: 20px;
+    font-weight: bold;
+}
+#plus{
+   display: flex;
+   align-items: center;
+    margin-right: 18px;
+    
+   width: 33px;
+   height: 33px;
+   font-weight: 300;
+   font-size: 30px;
+   color: rgb(170, 169, 169);
+    
+  border-radius: 20px;
+    cursor: pointer;
+}
+#plus:hover{
+    background-color: rgb(35, 35, 35); ;
+}
+
+.createplayist{
+    
+    padding: 8px;
+    padding-top: 30px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 25px;
+    height: 264px;
+    /* background-color: yellow; */
+ 
+}
+#innerbox{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction:column;
+    row-gap: 5px;
+    /* background-color: red; */
+    border-radius: 7px;
+    height: 130px;
+
+}
+#inner,#inner1,#inner2{
+    padding-left: 17px;
+    
+   
+/* background-color: teal; */
+color: white;
+}
+#inner{
+  font-weight: bold;
+    
+    padding-top: 17px;
+    height: 25px;
+  
+}
+#inner1{
+    font-size: 14px;
+  padding-bottom: 10px;
+}
+#inner2{
+    height: 34px;
+   padding: 5px;
+    padding-left: 17px;
+}
+#innerbutton{
+    cursor: pointer;
+   font-weight: 750;
+    border: 0;
+    width: auto;
+    height: 32px;
+    border-radius: 20px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+#cooki{
+    margin-top: 40px;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 100px;
+    left: 20px;
+    color: white;
+    font-size: 12px;
+cursor: pointer;
+}
+#cooki:hover{
+    text-decoration: underline;
+}
+#language{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 33px;
+    left: 20px;
+    /* background-color: red; */
+    color: white;
+    border: none;
+    border-radius:20px;
+    height: 30px;
+    width: 97px;
+    border: 0.5px solid white;
+    
+}
+#language:hover{
+    border: 1px solid white;
+    bottom: 32px;
+}
+#langlogo{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+width: 18px;
+/* background-color: yellow; */
+}
+#langtext{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+flex: 1;
+/* background-color: yellow; */
+font-weight: bold;
+}
+
+#trendingsong{
+   
+    background-image: linear-gradient(to bottom,rgb(30, 29, 29),rgb(15, 15, 15));
+    position: fixed;
+    right: 7;
+height:670px;
+width: 991px;
+
+
+}
+
+#songcontainer{
+padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+   /* background-color: red; */
+   height:614px;
+}
+#songs{
+    /* margin-left: -12px; */
+    flex: 1;
+    /* background-color: red; */
+    display: flex;
+   flex-direction: column;
+   row-gap: 12px;
+}
+#trendings{
+    height: 30px;
+    /* background-color: rgb(138, 137, 137); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#trdtext{
+    flex: 1;
+    color: white;
+    font-weight: 750;
+    font-size: 25px;
+    cursor: pointer;
+}
+#trdtext:hover{
+    text-decoration: underline;
+}
+#showall{
+    color: rgb(170, 169, 169);
+    font-weight: bold;
+    /* background-color: yellow; */
+    margin-right: 20px;
+    font-size: 14px;
+cursor: pointer;
+   
+       
+        
+
+}
+#showall:hover{
+    text-decoration: underline;
+}
+#songpic{
+    margin-left: -10px;
+    /* background-color: blue; */
+    flex: 1;
+    display:flex;
+    flex-direction: row;
+    column-gap: 15px;
+    
+    
+}
+
+
+#spic{
+    margin: 0px;
+    width: 164px;
+    margin: 0px;
+    border-radius: 7px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    
+}
+#spic:hover{
+    background-image: linear-gradient(to bottom,rgba(49, 47, 47,0.1),rgba(49, 47, 47,0.7));
+    /* background-color: rgba(49, 47, 47,0.5); */
+}
+#pic{
+
+   
+    border-radius: 7px;
+    /* flex: 4;
+background-color: yellow; */
+}
+#description{
+    color: white;
+    font-weight:440;
+    flex: 1;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+#description:hover{
+text-decoration: underline;
+
+}
+#creator{
+    font-size: 13px;
+    color: rgb(170, 169, 169);
+    
+   font-family: 300;
+    flex: 0.7;
+    width: 130px;
+    /* background-color: yellow; */
+}
+#creator:hover{
+text-decoration: underline;
+
+}
+#s{
+    width: 100%;
+}
+#s1{
+    border-radius:900px;
+   /* background-color: rgb(27, 27, 27); */
+    width: 100%;
+    
+}
+
+#creator1{
+    font-size: 13px;
+    color: rgb(170, 169, 169);
+    margin-top: -8px;
+   font-family: 300;
+    flex: 1;
+    width: 130px;
+    /* background-color: yellow; */
+}
+
+#fleft{
+    /* background-color: green; */
+    width:670px ;
+    padding-top: 12px;
+    padding-left: 17px;
+}
+#fright{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: blue; */
+    flex: 1;
+}
+
+#signupbutton{
+    background-color: white;
+    border-radius: 30px;
+    
+    width: 150px;
+    height: 46px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+   
+}

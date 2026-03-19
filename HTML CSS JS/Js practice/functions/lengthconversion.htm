@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            conversion
+        </title>
+    </head>
+    <body>
+        
+        <script>
+            function convert(length,from,to){
+                if(from==='km' && to==='miles'){
+                    console.log(length*(0.621371));
+
+                }
+                else if(to==='km' && from==='miles'){
+                    console.log(length*(1.60934));
+                }
+                else{
+                    console.log(`Wrong conversion`);
+                }
+                
+            }
+
+            convert(50,'miles','km');
+        </script>
+    </body>
+</html>

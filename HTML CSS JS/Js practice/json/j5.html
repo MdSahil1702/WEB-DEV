@@ -1,0 +1,28 @@
+<!-- ou have two identical objects.
+→ Compare their JSON strings using JSON.stringify() to check if they’re the same (deep equality check).
+→ Explain what limitations this comparison might have. -->
+
+
+<html>
+    <body>
+        <script>
+         const obj={
+            name: "Lily", password: "1234", age: 20
+         };
+
+         const obj1={
+            name: "Lily", password: "1234", age: 20
+         };
+
+         const str=JSON.stringify(obj);
+         const str1=JSON.stringify(obj1);
+
+         if(str===str1){
+            console.log('Identical Object');
+         }
+         else{
+            console.log('Not Identical');
+         }
+        </script>
+    </body>
+</html>

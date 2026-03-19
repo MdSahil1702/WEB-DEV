@@ -1,0 +1,60 @@
+<!-- Attribute Manipulation 
+```html
+<img id="profile" src="old.jpg" alt="Profile" data-user-id="123">
+<input type="text" id="username" value="john_doe">
+<div class="box" data-info='{"count": 5}'></div>
+```
+ Tasks: 
+1. Read all attributes of the image
+2. Update image source and alt text
+3. Work with data attributes - read and modify
+4. Check if certain attributes exist
+ -->
+
+<html>
+
+<body>
+
+    <img id="profile" src="#" alt="Profile" data-user-id="123">
+
+    <input type="text" id="username" value="john_doe">
+
+    <div class="box" data-info='{"count": 5}'>
+
+    </div>
+
+</body>
+
+<script>
+
+    //getting the attributes of the image
+const imge=document.querySelector("#profile");
+
+console.log(imge.getAttribute('src'));
+console.log(imge.getAttribute('alt'));
+console.log(imge.getAttribute('data-user-id'));
+
+//updating the image src and alt
+
+imge.setAttribute('src','##');
+imge.setAttribute('alt','change alt ');
+
+console.log("after making the changes to src = "+ imge.getAttribute('src'));
+console.log("after making the changes to the image alt = "+imge.getAttribute('alt'));
+
+
+//work with data attribute 
+//read
+
+console.log(imge.getAttribute('data-user-id'));
+//modity
+imge.setAttribute('data-user-id','456');
+console.log("after making the changes to the data = "+imge.getAttribute('data-user-id'));
+
+
+//checking if the attribute present or not
+
+console.log(imge.hasAttribute("validity"));
+</script>
+
+</html>

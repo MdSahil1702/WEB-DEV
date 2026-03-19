@@ -1,0 +1,73 @@
+Perfect 👍 — here are **6 practical, concept-clearing questions** on `localStorage` methods:
+👉 `setItem()`, `getItem()`, `removeItem()`, and `clear()` — from **basic to moderate** level.
+
+---
+
+### 🟢 **1. Basic — Store and Retrieve**
+
+You want to save a user’s name in local storage and later display it on the page.
+👉 Task:
+
+* Store the name `"Amit"` using `localStorage.setItem()`
+* Retrieve it using `getItem()` and log it to the console.
+* Confirm the value in **Application → Local Storage** tab in browser dev tools.
+
+---
+
+### 🟢 **2. Basic — Numbers and Type Conversion**
+
+You save a user’s score `50` using `localStorage.setItem()`.
+👉 Task:
+
+* Retrieve the score and log its type using `typeof`.
+* Why is it a **string**, and how can you convert it back to a number?
+
+---
+
+### 🟡 **3. Moderate — Store Object Data**
+
+You have an object like `{ name: "Riya", age: 22 }`.
+👉 Task:
+
+* Store this object in `localStorage`.
+* Retrieve it and access the user’s `age`.
+  *(Hint: use `JSON.stringify()` and `JSON.parse()`)*
+
+---
+
+### 🟡 **4. Moderate — Update Stored Data**
+
+You already have `"user"` stored in localStorage as
+`{ name: "Riya", age: 22 }`.
+👉 Task:
+
+* Retrieve the object
+* Increment `age` by 1
+* Store it back again properly in localStorage
+
+---
+
+### 🟡 **5. Moderate — Remove a Specific Item**
+
+You have multiple keys stored:
+
+* `"username"`, `"token"`, `"theme"`
+
+👉 Task:
+
+* Remove only `"token"` from localStorage
+* Verify it’s deleted but other keys remain
+
+---
+
+### 🟡 **6. Moderate — Clear All Data**
+
+Your web app stores several keys like `"user"`, `"theme"`, `"cart"`, `"token"`.
+👉 Task:
+
+* Use a single command to remove *all* of them from localStorage.
+* Then confirm `localStorage.length` equals `0`.
+
+---
+
+Would you like me to give **solutions (with code + expected output)** for these 6 next — so you can check your answers after trying?

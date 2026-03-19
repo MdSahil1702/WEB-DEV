@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <h3> Amazon Shipping calculator</h3>
+        <h3> Orders under $40 = +$10 shipping.</h3>
+        <h3> Orders over $40 = FREE     shipping.</h3>
+
+        <input type="text" id="textinput" placeholder="Cost of order" 
+
+        
+
+         onkeydown="
+        if(event.key=='Enter'){
+            f();
+        }
+        "
+        >
+        <input type="button" id="calculate" value="Calculate"
+        onclick=" f()"
+       >
+       <p id="show"> </p>
+
+     
+
+ <script>
+   function f(){
+
+        
+      const inputElemetn=document.querySelector("#textinput"); 
+
+    let val =Number(inputElemetn.value) ;
+
+    
+   
+    if(val < 40 ){
+     val =val+10;
+     
+     document.querySelector("#show").innerHTML=`$${val}`;
+    }
+    else{
+       
+        document.querySelector("#show").innerHTML=`$${val}`;
+    }
+    };
+
+  
+</script>
+
+
+    </body>
+</html>
