@@ -6,6 +6,7 @@
 </head>
 <body>
     
+    <div id="container"></div>
 
     <!-- React -->
      <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
@@ -19,6 +20,16 @@
     <script type="text/babel">
         //for now will type our jsx here and babel will translate it into Js so that the Browser can understand
 
+        const Elemt = (
+            <div>
+                <p>Hello i am a programmer learning React </p>
+                <p>And this is the Minimal code requires to Make a React Web Application</p>
+                <button>Support</button>
+            </div>
+        );
+
+        ReactDOM.createRoot(container).render(Elemt);
+        // using (); just for safe use of the code so that it look organized and easy to read for the other programmer
     </script>
 </body>
 </html>
