@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Props - Properties</title>
+</head>
+<body>
+    
+    <div id="container"></div>
+
+    <!-- React -->
+     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
+
+     <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> 
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+        function Hotel(){
+
+            const dishName="Mutton Curry";
+            const price = 1099.3;
+            const isSpicy=false;
+
+            return (
+               
+                <Waiter 
+                dishName={dishName}
+                price= {price}
+                isSpicy={isSpicy}
+                />
+                
+
+            );
+        }
+
+        function Waiter(props){
+            
+             const { dishName, price, isSpicy } = props;
+             
+             
+             return (
+                <>
+             <p>dishName</p>
+             <p>price</p>
+             <p>isSpicy</p>
+             </>
+        );
+            
+        }
+        
+        const container = document.getElementById("container");
+        ReactDOM.createRoot(container).render(<Hotel/>);
+      
+    </script>
+</body>
+</html>
