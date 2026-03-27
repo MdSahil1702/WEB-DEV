@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Chatbot</title>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- data formatter -->
+    <script src="https://unpkg.com/dayjs/dayjs.min.js"></script>
+
+    <script type="text/babel">
+        //for now will type our jsx here and babel will translate it into Js so that the Browser can understand
+
+        // function displayChat(props){
+        //         return(
+        //             <>
+        //             <div>
+        //                 props.chatMessage.map()
+        //             </div>
+        //             </>
+        //         );
+        // }
+
+        function ChatMessage(props) {
+
+            if (props.sender === "user") {
+                return (
+                    <div>
+                        {props.message}
+
+                        <img src="./pngs/user.png" width='30' />
+
+
+                    </div>
+
+
+
+                );
+            }
+
+
+            else {
+                return (
+                    <div>
+                        <img src="./pngs/computer.png" width='30' />
+                        {props.message}
+
+
+
+
+                    </div>
+
+
+
+                );
+            }
+
+            //     const [chatMessage,UpdateMessage]=React.useState(
+
+        }
+
+        //     );
+
+
+
+        function App() {
+
+
+            const [chatmessage,setchatmessage] = React.useState([
+                {
+                    message: 'Hello',
+                    sender: 'user',
+                    id: crypto.randomUUID()
+                },
+                {
+                    message: 'Hey! what can I help you !',
+                    sender: 'robot',
+                    id: crypto.randomUUID()
+                },
+                {
+                    message: 'can you get me todays date',
+                    sender: 'user',
+                    id: crypto.randomUUID()
+                },
+                {
+                    message: 'Todays date is ' + dayjs().format('DD-MM-YY'),
+                    sender: "robot",
+                    id: crypto.randomUUID()
+                }
+            ]);
+
+
+            const chatmessagecomponent = chatmessage.map((chatmessages) => {
+                return (
+                    <ChatMessage
+                        message={chatmessages.message}
+                        sender={chatmessages.sender}
+                        id={chatmessages.id}
+                    />
+                );
+
+            });
+
+
+
+            function sendMessage(props) {
+                setchatmessage(
+                    ...ChatMessage,
+                    {
+                        message:props.message,
+                        sender:props.sender,
+                        id:crypto.randomUUID()
+                    }
+                )
+            }
+
+            return (
+                <div>
+                    <input type="text" placeholder="Enter your message here" />
+                    <button onClick="sendMessage ">Send</button>
+                    {chatmessagecomponent}
+                </div>
+            );
+        };
+
+
+        const root = document.getElementById('container');
+        ReactDOM.createRoot(root).render(<App />);
+        // using (); just for safe use of the code so that it look organized and easy to read for the other programmer
+    </script>
+</body>
+
+</html>
