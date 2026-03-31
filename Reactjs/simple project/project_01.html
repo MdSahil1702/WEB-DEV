@@ -3,6 +3,68 @@
 
 <head>
     <title>Chatbot</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        .main-container{
+            max-width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .send-button{
+            width: 70px;
+            height: 40px;
+            margin-left: 4px;
+            border-radius: 4px;
+            background-color: #008000;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .input-area{
+            border-radius: 4px;
+            height: 30px;
+            font-size: 15px;
+            flex: 1;
+            margin-bottom: 20px;
+            margin-top: 2px;
+            padding-left: 8px;
+        }
+        .user-chat{
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            
+        }
+        .robot-chat{
+            display: flex;
+            align-items: start;
+        }
+
+        .message{
+           
+            margin-bottom: 20px;
+            margin-right: 6px;
+            margin-left: 6px;
+
+            background-color: rgba(192, 192, 192, 0.521);
+            padding: 10px;
+            border-radius: 7px;
+            max-width: 300px;
+
+        }
+
+        .head-container{
+            display: flex;
+
+        }
+
+        .img-style{
+            width: 42px;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,17 +118,17 @@
             }
 
             return (
-                <>
-                    <input
+                <div className="head-container">
+                    <input className="input-area"
                         placeholder="Send a message to Chatbot"
                         size="30"
                         onChange={saveInputText}
                         value={inputText}
                     />
-                    <button
+                    <button className="send-button"
                         onClick={sendMessage}
                     >Send</button>
-                </>
+                </div>
             );
         }
 
@@ -87,13 +149,17 @@
             */
 
             return (
-                <div>
+                <div className={
+                    (sender==="user")
+                    ?"user-chat"
+                    :"robot-chat"
+                }>
                     {sender === 'robot' && (
-                        <img src="./pngs/computer.png" width="50" />
+                        <img src="./pngs/computer.png" className="img-style"/>
                     )}
-                    {message}
+                    <div className="message">{message}</div>
                     {sender === 'user' && (
-                        <img src="./pngs/user.png" width="50" />
+                        <img src="./pngs/user.png"  className="img-style"/>
                     )}
                 </div>
             );
@@ -138,7 +204,7 @@
             // const setChatMessages = array[1];
 
             return (
-                <>
+                <div className="main-container">
                     <ChatInput
                         chatMessages={chatMessages}
                         setChatMessages={setChatMessages}
@@ -146,7 +212,7 @@
                     <ChatMessages
                         chatMessages={chatMessages}
                     />
-                </>
+                </div>
             );
         }
 
