@@ -131,8 +131,16 @@
                 ]);
 
                 setInputText('');
+                   
+               
             }
-
+            
+             const enterToSubmit=(e) => {
+                    if(e.key==="Enter"){
+                        sendMessage();
+                    }
+                };
+                
             return (
                 <div className="head-container">
                     <input className="input-area"
@@ -140,6 +148,7 @@
                         size="30"
                         onChange={saveInputText}
                         value={inputText}
+                        onKeyDown={enterToSubmit}
                     />
                     <button className="send-button"
                         onClick={sendMessage}
