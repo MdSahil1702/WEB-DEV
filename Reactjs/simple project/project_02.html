@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project-02</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="js-container"></div>
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script type="text/babel">
+      
+      
+      
+     function App(){
+        
+
+        const [hide,set_h]=React.useState("false");
+
+
+       
+
+      function ShowAndHide(){
+        if(hide==="true")set_h("false");
+        else set_h("true");
+      }
+        return(
+            <>
+            <p>Hello, welcome to my website</p>
+
+            <div>
+                <input type="text" placeholder="Email"/>
+            </div>
+            <div>
+                {/*hide false then *** like password hidden*/}
+                <input type={hide==="false"?"password":"text"} placeholder="Password"
+                
+                
+                />
+                <button 
+                onClick={ShowAndHide}
+                >
+                    {hide==="false"?"Show":"Hide"}
+                </button>
+            </div>
+
+            <div>
+                <button>
+                    Login
+                </button>
+                <button>
+                    Sign up
+                </button>
+            </div>
+            </>
+        );
+     }
+     const container=document.querySelector(".js-container");
+     ReactDOM.createRoot(container).render(<App/>);
+
+    </script>
+</body>
+
+</html>
