@@ -4,6 +4,22 @@
 <head>
     <title>Project-02</title>
     <style>
+        .buttons{
+            background-color: rgb(16, 91, 213);
+            color: white;
+            border-radius: 4px;
+            border: none;
+            width: 60px;
+            height: 30px;
+            margin: 10px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+       .emailinput,.passwordinput{
+        height: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+       }
        
     </style>
 </head>
@@ -37,18 +53,20 @@
         if(hide==="true")set_h("false");
         else set_h("true");
       }
+
+      
         return(
             <>
             <p>Hello, welcome to my website</p>
 
             <div>
-                <input type="text" placeholder="Email"/>
+                <input type="text" placeholder="Email" className="emailinput"/>
             </div>
             <div>
                 {/*hide false then *** like password hidden*/}
                 <input type={hide==="false"?"password":"text"} placeholder="Password"
                 
-                
+                className="passwordinput"
                 />
                 <button 
                 onClick={ShowAndHide}
@@ -58,10 +76,10 @@
             </div>
 
             <div>
-                <button>
+                <button className="buttons">
                     Login
                 </button>
-                <button>
+                <button className="buttons">
                     Sign up
                 </button>
             </div>
