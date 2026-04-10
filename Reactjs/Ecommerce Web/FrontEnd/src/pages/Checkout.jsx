@@ -7,6 +7,8 @@ import dayjs from 'dayjs';
 export function Checkout({ cart }) {
   const [deliveryOption,setDeliveryOption]=useState([]);
 
+  const[paymentSummary,setPaymentSummary]=useState(null);
+
   useEffect(()=>{
 
     axios.get('/api/delivery-options?expand=estimatedDeliveryTime').then((response)=>{
@@ -15,7 +17,15 @@ export function Checkout({ cart }) {
       setDeliveryOption(response.data);
      });
 
+
+     axios.get('/api/product-summary').then((response)=>{
+    setPaymentSummary(response.data);
+  });
+
+
   },[]);
+
+  
 
   return (
     <>
