@@ -31,7 +31,7 @@ function App() {
     <Routes>
       <Route index element={ <HomePage cart={cart}/>}/>
       <Route path="checkout" element={ <Checkout cart={cart}/>}/>
-      <Route path="order" element={<OrderPage/>}/>
+      <Route path="order" element={<OrderPage cart={cart}/>}/>
       <Route path='tracking' element={<Tracking/>}> </Route>
     </Routes>
     </>
