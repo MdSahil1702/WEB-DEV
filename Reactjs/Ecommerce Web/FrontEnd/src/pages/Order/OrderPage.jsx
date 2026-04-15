@@ -1,5 +1,5 @@
 import './orders.css';
-import {Header} from '../Components/Header';
+import {Header} from '../../Components/Header';
 import axios from 'axios';
 import {useState,useEffect,Fragment}from 'react';
 import dayjs from 'dayjs';
@@ -10,9 +10,14 @@ export function OrderPage({cart}){
   const [orders,setOrders]=useState([]);
 
   useEffect(()=>{
-    axios.get('/api/orders?expand=products').then((response)=>{
+    const getProduct= async ()=>{
+    const response = await axios.get('/api/orders?expand=products');
       setOrders(response.data);
-    })
+    }
+
+    getProduct();
+
+    
   },[]);
     return (
 <> 
@@ -43,6 +48,7 @@ export function OrderPage({cart}){
               <div>{order.id}</div>
             </div>
           </div>
+          
 
           <div className="order-details-grid">
             {order.products.map((orderProduct)=>{
